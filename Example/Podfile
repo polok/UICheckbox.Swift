@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'UICheckbox_Example' do
+  pod 'UICheckbox', :path => '../'
+
+  target 'UICheckbox_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
