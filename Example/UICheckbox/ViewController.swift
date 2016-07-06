@@ -7,11 +7,17 @@
 //
 
 import UIKit
+import UICheckbox
 
 class ViewController: UIViewController {
 
+
     override func viewDidLoad() {
         super.viewDidLoad()
+//        checkbox.onSelectStateChanged = {
+//            (checkbox, selected) in
+//            debugPrint("Clicked \(selected)")
+//        }
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -19,6 +25,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
 
 }
 

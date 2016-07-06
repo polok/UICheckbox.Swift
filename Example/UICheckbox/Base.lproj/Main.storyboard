@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="UICheckbox_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,7 +17,227 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lrz-NP-Mfk" customClass="UICheckbox" customModule="UICheckbox">
+                                <rect key="frame" x="20" y="50" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4ED-xq-gcf"/>
+                                    <constraint firstAttribute="width" constant="40" id="F4G-JM-Yhm"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pB7-DN-tsa" customClass="UICheckbox" customModule="UICheckbox">
+                                <rect key="frame" x="20" y="98" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="BCP-y2-xsQ"/>
+                                    <constraint firstAttribute="height" constant="40" id="ymL-U2-9eh"/>
+                                </constraints>
+                                <color key="tintColor" red="0.93404492780000004" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.93404492781155013" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="brandColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aS1-rM-3xw" customClass="UICheckbox" customModule="UICheckbox">
+                                <rect key="frame" x="20" y="151" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="DqL-ey-1la"/>
+                                    <constraint firstAttribute="height" constant="40" id="SXW-Vo-Zxa"/>
+                                </constraints>
+                                <color key="tintColor" red="0.098039215690000001" green="0.60392156860000001" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.098039215690000001" green="0.60392156860000001" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alE-YU-FaA" customClass="UICheckbox" customModule="UICheckbox">
+                                <rect key="frame" x="94" y="50" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="NJV-mK-zvt"/>
+                                    <constraint firstAttribute="height" constant="40" id="oZC-r4-hqL"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Te8-BY-62D" customClass="UICheckbox" customModule="UICheckbox">
+                                <rect key="frame" x="94" y="98" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="hob-pB-0Z8"/>
+                                    <constraint firstAttribute="height" constant="40" id="zLg-yj-3wq"/>
+                                </constraints>
+                                <color key="tintColor" red="0.93404492780000004" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.93404492780000004" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="brandColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uk9-Kw-JLp" customClass="UICheckbox" customModule="UICheckbox">
+                                <rect key="frame" x="94" y="151" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Mi4-8T-1hC"/>
+                                    <constraint firstAttribute="height" constant="40" id="h6f-XG-mD7"/>
+                                </constraints>
+                                <color key="tintColor" red="0.098039215690000001" green="0.60392156860000001" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.098039215690000001" green="0.60392156860000001" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bd3-zz-ncP" customClass="UICheckbox" customModule="UICheckbox">
+                                <rect key="frame" x="246" y="55" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0l2-jG-0RA"/>
+                                    <constraint firstAttribute="width" constant="30" id="pcd-11-TVv"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="0.50588235290000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="0.50588235290000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tI-Wc-q8d" customClass="UICheckbox" customModule="UICheckbox">
+                                <rect key="frame" x="189" y="103" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Gyn-r8-EVO"/>
+                                    <constraint firstAttribute="width" constant="30" id="PNc-9z-PvL"/>
+                                </constraints>
+                                <color key="tintColor" red="0.99607843139999996" green="0.82352941180000006" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="0.50588235290000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zbm-bl-CfA" customClass="UICheckbox" customModule="UICheckbox">
+                                <rect key="frame" x="246" y="103" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="WvR-dX-Vm0"/>
+                                    <constraint firstAttribute="width" constant="30" id="xI7-gN-vKX"/>
+                                </constraints>
+                                <color key="tintColor" red="0.99607843139999996" green="0.82352941180000006" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="0.50588235290000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWe-Pq-EgO" customClass="UICheckbox" customModule="UICheckbox">
+                                <rect key="frame" x="189" y="55" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="QGe-z9-66v"/>
+                                    <constraint firstAttribute="width" constant="30" id="hja-u2-22M"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="0.50588235290000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="0.50588235290000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uk9-Kw-JLp" firstAttribute="top" secondItem="Te8-BY-62D" secondAttribute="bottom" constant="8" id="3ZM-MQ-a8m"/>
+                            <constraint firstItem="pB7-DN-tsa" firstAttribute="top" secondItem="Lrz-NP-Mfk" secondAttribute="bottom" constant="8" id="5Us-uI-8hQ"/>
+                            <constraint firstItem="uk9-Kw-JLp" firstAttribute="leading" secondItem="aS1-rM-3xw" secondAttribute="trailing" constant="34" id="8sq-8t-tyV"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="pB7-DN-tsa" secondAttribute="leading" id="Gcn-t7-it2"/>
+                            <constraint firstItem="alE-YU-FaA" firstAttribute="leading" secondItem="Lrz-NP-Mfk" secondAttribute="trailing" constant="34" id="Gdl-qw-PKk"/>
+                            <constraint firstItem="Zbm-bl-CfA" firstAttribute="leading" secondItem="6tI-Wc-q8d" secondAttribute="trailing" constant="27" id="PKv-Dw-svo"/>
+                            <constraint firstItem="6tI-Wc-q8d" firstAttribute="top" secondItem="kWe-Pq-EgO" secondAttribute="bottom" constant="18" id="afa-rc-T28"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="aS1-rM-3xw" secondAttribute="leading" id="c7H-ac-qwu"/>
+                            <constraint firstItem="aS1-rM-3xw" firstAttribute="top" secondItem="pB7-DN-tsa" secondAttribute="bottom" constant="8" id="cPd-AO-9QD"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Lrz-NP-Mfk" secondAttribute="leading" id="djV-9U-z3l"/>
+                            <constraint firstItem="kWe-Pq-EgO" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="35" id="mJr-Hm-fiY"/>
+                            <constraint firstItem="kWe-Pq-EgO" firstAttribute="leading" secondItem="alE-YU-FaA" secondAttribute="trailing" constant="55" id="nPy-AN-Vun"/>
+                            <constraint firstItem="Bd3-zz-ncP" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="35" id="r6D-1w-tpq"/>
+                            <constraint firstItem="Te8-BY-62D" firstAttribute="leading" secondItem="pB7-DN-tsa" secondAttribute="trailing" constant="34" id="tMz-Pp-6Ru"/>
+                            <constraint firstItem="alE-YU-FaA" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="tNO-gH-Gyz"/>
+                            <constraint firstItem="Zbm-bl-CfA" firstAttribute="top" secondItem="Bd3-zz-ncP" secondAttribute="bottom" constant="18" id="tl3-ze-pYq"/>
+                            <constraint firstItem="Lrz-NP-Mfk" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="tne-NR-0WY"/>
+                            <constraint firstItem="6tI-Wc-q8d" firstAttribute="leading" secondItem="Te8-BY-62D" secondAttribute="trailing" constant="55" id="wPT-ac-eeF"/>
+                            <constraint firstItem="Bd3-zz-ncP" firstAttribute="leading" secondItem="kWe-Pq-EgO" secondAttribute="trailing" constant="27" id="yLm-PX-NGz"/>
+                            <constraint firstItem="Te8-BY-62D" firstAttribute="top" secondItem="alE-YU-FaA" secondAttribute="bottom" constant="8" id="zpE-dS-7dV"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

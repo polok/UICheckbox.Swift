@@ -32,9 +32,9 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'UICheckbox/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'UICheckbox' => ['UICheckbox/Assets/*.png']
-  # }
+  s.resource_bundles = {
+     'UICheckbox' => ['UICheckbox/Assets/*.png']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
