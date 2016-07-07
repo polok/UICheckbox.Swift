@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://github.com/polok/UICheckbox.Swift/blob/develop/Resources/uicheckbox_logo.png" alt="Storage" />
+    <img src="https://github.com/polok/UICheckbox.Swift/blob/master/Resources/uicheckbox_logo.png" alt="Storage" />
 </p>
 
 <p align="center">
