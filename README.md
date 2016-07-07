@@ -1,11 +1,35 @@
-# UICheckbox.Swift
-=======
-# UICheckbox
+<p align="center">
+    <img src="https://github.com/polok/UICheckbox.Swift/blob/develop/Resources/uicheckbox_logo.png" alt="Storage" />
+</p>
 
-[![CI Status](http://img.shields.io/travis/marcin.polak/UICheckbox.svg?style=flat)](https://travis-ci.org/marcin.polak/UICheckbox)
-[![Version](https://img.shields.io/cocoapods/v/UICheckbox.svg?style=flat)](http://cocoapods.org/pods/UICheckbox)
-[![License](https://img.shields.io/cocoapods/l/UICheckbox.svg?style=flat)](http://cocoapods.org/pods/UICheckbox)
-[![Platform](https://img.shields.io/cocoapods/p/UICheckbox.svg?style=flat)](http://cocoapods.org/pods/UICheckbox)
+<p align="center">
+    <img src="https://img.shields.io/badge/platform-iOS%208%2B-blue.svg?style=flat" alt="Platform: iOS 8+" />
+    <a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/language-swift2-f48041.svg?style=flat" alt="Language: Swift 2" /></a>
+    <img src="http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat" alt="License: MIT" />
+</p>
+
+<p align="center">
+    <a href="#installation">Installation</a>
+  • <a href="https://github.com/polok/UICheckbox.Swift/issues">Issues</a>
+  • <a href="#license">License</a>
+</p>
+
+UICheckbox is simple as hell and lightweight class to add 'checkbox' UI component in iOS application. For now it inherits from UIButton but this probably will change in upcoming versions.
+
+## Compatibility
+
+UICheckbox requires iOS 8+ and is compatible with **Swift 2** projects. Please, don't count for Objective-C support ;)
+
+## Installation
+
+Comming soon
+
+
+## Usage
+
+### Basic types
+Comming soon
+
 
 ## Example
 
@@ -22,3 +46,4 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## License
 
 UICheckbox is available under the MIT license. See the LICENSE file for more info.
+
