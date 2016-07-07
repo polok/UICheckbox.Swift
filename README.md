@@ -16,6 +16,12 @@
 
 UICheckbox is simple as hell and lightweight class to add 'checkbox' UI component in iOS application. For now it inherits from UIButton but this probably will change in upcoming versions.
 
+## Demo
+
+<p align="center">
+    <img src="https://github.com/polok/UICheckbox.Swift/blob/master/Resources/uicheckbox_example.png" alt="Demo UICheckbox" />
+</p>
+
 ## Compatibility
 
 UICheckbox requires iOS 8+ and is compatible with **Swift 2** projects. Please, don't count for Objective-C support ;)
@@ -45,5 +51,4 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## License
 
-UICheckbox is available under the MIT license. See the LICENSE file for more info.
-
+UICheckbox is available under the MIT license. See the [LICENSE](https://github.com/polok/UICheckbox.Swift/blob/master/LICENSE) file for more info.
