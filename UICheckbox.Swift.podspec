@@ -1,15 +1,7 @@
-#
-# Be sure to run `pod lib lint UICheckbox.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
-  s.name             = 'UICheckbox'
+  s.name             = 'UICheckbox.Swift'
   s.version          = '0.1.0'
-  s.summary          = 'UICheckbox is simple as hell and lightweight class to add \'checkbox\' UI component in iOS application.'
+  s.summary          = 'UICheckbox.Swift is simple as hell and lightweight class to add \'checkbox\' UI component in iOS application.'
   s.homepage         = 'https://github.com/polok/UICheckbox.Swift'
   s.screenshots      = 'https://raw.githubusercontent.com/polok/UICheckbox.Swift/master/Resources/uicheckbox_example.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

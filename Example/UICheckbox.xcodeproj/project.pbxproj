@@ -43,7 +43,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6A33234B19B040273BED61FB /* Pods_UICheckbox_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UICheckbox_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F1B418F96C579BB36D2DB7A /* Pods_UICheckbox_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UICheckbox_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FF7641B45AC05396221C4D8 /* UICheckbox.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = UICheckbox.podspec; path = ../UICheckbox.podspec; sourceTree = "<group>"; };
+		8FF7641B45AC05396221C4D8 /* UICheckbox.Swift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.podspec; name = UICheckbox.Swift.podspec; path = ../UICheckbox.Swift.podspec; sourceTree = "<group>"; };
 		C9D2C89A256FA842C7EAF21C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DC1EB835096B42154A991D5C /* Pods-UICheckbox_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICheckbox_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UICheckbox_Tests/Pods-UICheckbox_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EDA506A46E92C01183865425 /* Pods-UICheckbox_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICheckbox_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UICheckbox_Example/Pods-UICheckbox_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				8FF7641B45AC05396221C4D8 /* UICheckbox.podspec */,
+				8FF7641B45AC05396221C4D8 /* UICheckbox.Swift.podspec */,
 				C9D2C89A256FA842C7EAF21C /* README.md */,
 				3EF965A01EC915DE9A6655DB /* LICENSE */,
 			);
