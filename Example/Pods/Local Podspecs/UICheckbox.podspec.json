@@ -1,0 +1,27 @@
+{
+  "name": "UICheckbox",
+  "version": "0.1.0",
+  "summary": "A short description of UICheckbox.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/UICheckbox",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "marcin.polak": "mpolak87@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/UICheckbox.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "UICheckbox/Classes/**/*",
+  "resource_bundles": {
+    "UICheckbox": [
+      "UICheckbox/Assets/*.png"
+    ]
+  }
+}

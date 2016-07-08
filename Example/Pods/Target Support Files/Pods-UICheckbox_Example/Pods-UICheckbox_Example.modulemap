@@ -1,0 +1,6 @@
+framework module Pods_UICheckbox_Example {
+  umbrella header "Pods-UICheckbox_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

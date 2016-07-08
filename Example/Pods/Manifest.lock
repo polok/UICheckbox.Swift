@@ -1,0 +1,16 @@
+PODS:
+  - UICheckbox (0.1.0)
+
+DEPENDENCIES:
+  - UICheckbox (from `../`)
+
+EXTERNAL SOURCES:
+  UICheckbox:
+    :path: ../
+
+SPEC CHECKSUMS:
+  UICheckbox: 6e0dce6510f2137cda6d51c0785efba012e529a7
+
+PODFILE CHECKSUM: ac3fe884f97e2dfbbafb38869c5e78731cfb3064
+
+COCOAPODS: 1.0.1

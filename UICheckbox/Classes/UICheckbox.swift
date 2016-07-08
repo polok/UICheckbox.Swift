@@ -28,6 +28,11 @@ import UIKit
 
 @IBDesignable public class UICheckbox: UIButton {
 
+    /*
+    * Variable describes UICheckbox padding
+    */
+    @IBInspectable var padding: CGFloat = CGFloat(15)
+
    /*
    * Variable describes UICheckbox border width
    */
@@ -87,6 +92,21 @@ import UIKit
     override init(frame: CGRect) {
         super.init(frame: frame)
         initDefaultParams()
+    }
+    
+    /*
+     * Increase UICheckbox 'clickability' area for better UX
+     */
+    override public func pointInside(point: CGPoint, withEvent event: UIEvent?) -> Bool {
+        
+        let newBound = CGRect(
+            x: self.bounds.origin.x - padding,
+            y: self.bounds.origin.y - padding,
+            width: self.bounds.width + 2 * padding,
+            height: self.bounds.width + 2 * padding
+        )
+        
+        return CGRectContainsPoint(newBound, point)
     }
     
     override public func prepareForInterfaceBuilder() {

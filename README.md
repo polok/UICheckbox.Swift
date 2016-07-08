@@ -28,26 +28,38 @@ UICheckbox requires iOS 8+ and is compatible with **Swift 2** projects. Please, 
 
 ## Installation
 
-Comming soon
+As for [CocoaPods](https://cocoapods.org), use this to get the latest release:
 
+```ruby
+use_frameworks!
+
+pod 'UICheckbox'
+```
+
+And `import UICheckbox` in the files you'd like to use it.
 
 ## Usage
 
-### Basic types
-Comming soon
+A custom params available from Interface Builder
++ border width<br/>
+    Border width of our UICheckbox
++ border color<br/>
+    Border color of our UICheckbox
++ corner radius <br/>
+    Radius if we don't want to have square UICheckbox
++ padding <br/>
+    Padding of our UICheckbox to increase the 'touch' area (especially for smaller ones)
+
+UICheckbox is a subclass of UIButton (at least for now), so you can add it by adding UIButton class and then just change the class to **UICheckbox**
 
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
-
-## Installation
-
 
 ## Author
-
+Marcin Polak - mpolak87(at).gmail.com
 
 ## License
 
