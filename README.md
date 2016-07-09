@@ -58,7 +58,7 @@ Callback to be notified about UICheckbox state changes:
 
 ```swift
 checkbox.onSelectStateChanged = { (checkbox, selected) in
-    ebugPrint("Clicked - \(selected)")
+    debugPrint("Clicked - \(selected)")
 }
 ```
 
