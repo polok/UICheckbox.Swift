@@ -54,6 +54,14 @@ A custom params available from Interface Builder
 UICheckbox is a subclass of UIButton (at least for now), so you can add it by adding UIButton class and then just change the class to **UICheckbox**
 
 
+Callback to be notified about UICheckbox state changes:
+
+```swift
+checkbox.onSelectStateChanged = { (checkbox, selected) in
+    ebugPrint("Clicked - \(selected)")
+}
+```
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
