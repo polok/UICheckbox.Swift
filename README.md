@@ -70,6 +70,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Author
 Marcin Polak - mpolak87(at).gmail.com
 
-## License
 
+## Contribution
+Feel free to fork the project and send us a pull-request! :sunglasses:
+
+## License
 UICheckbox is available under the MIT license. See the [LICENSE](https://github.com/polok/UICheckbox.Swift/blob/master/LICENSE) file for more info.
