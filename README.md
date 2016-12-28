@@ -25,7 +25,7 @@ UICheckbox is simple as hell and lightweight class to add 'checkbox' UI componen
 
 ## Compatibility
 
-UICheckbox requires iOS 8+ and is compatible with **Swift 2** projects. Please, don't count for Objective-C support ;)
+UICheckbox requires iOS 8+ and is compatible with **Swift 3** projects (for Swift 2.3 support, please check swift-2.3 branch). Please, don't count for Objective-C support ;)
 
 ## Installation
 

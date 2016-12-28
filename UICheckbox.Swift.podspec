@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'UICheckbox.Swift'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'UICheckbox.Swift is simple as hell and lightweight class to add \'checkbox\' UI component in iOS application.'
   s.homepage         = 'https://github.com/polok/UICheckbox.Swift'
   s.screenshots      = 'https://raw.githubusercontent.com/polok/UICheckbox.Swift/master/Resources/uicheckbox_example.png'

@@ -26,7 +26,7 @@
 
 import UIKit
 
-@IBDesignable public class UICheckbox: UIButton {
+@IBDesignable open class UICheckbox: UIButton {
 
     /*
     * Variable describes UICheckbox padding
@@ -45,9 +45,9 @@ import UIKit
     /*
     * Variable stores UICheckbox border color
     */
-    @IBInspectable var borderColor: UIColor = UIColor.lightGrayColor() {
+    @IBInspectable var borderColor: UIColor = UIColor.lightGray {
         didSet {
-            layer.borderColor = borderColor.CGColor
+            layer.borderColor = borderColor.cgColor
         }
     }
 
@@ -63,17 +63,17 @@ import UIKit
     /*
     * Variable to store current UICheckbox select status
     */
-    override public var selected: Bool {
+    override open var isSelected: Bool {
         didSet {
-            super.selected = selected
-            onSelectStateChanged?(checkbox: self, selected: selected)
+            super.isSelected = isSelected
+            onSelectStateChanged?(self, isSelected)
         }
     }
 
     /*
     * Callback for handling checkbox status change
     */
-    public var onSelectStateChanged: ((checkbox: UICheckbox, selected: Bool) -> Void)?
+    open var onSelectStateChanged: ((_ checkbox: UICheckbox, _ selected: Bool) -> Void)?
 
 
     // MARK: Init
@@ -97,7 +97,7 @@ import UIKit
     /*
      * Increase UICheckbox 'clickability' area for better UX
      */
-    override public func pointInside(point: CGPoint, withEvent event: UIEvent?) -> Bool {
+    override open func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
         
         let newBound = CGRect(
             x: self.bounds.origin.x - padding,
@@ -106,11 +106,11 @@ import UIKit
             height: self.bounds.width + 2 * padding
         )
         
-        return CGRectContainsPoint(newBound, point)
+        return newBound.contains(point)
     }
     
-    override public func prepareForInterfaceBuilder() {
-        setTitle("", forState: .Normal)
+    override open func prepareForInterfaceBuilder() {
+        setTitle("", for: UIControlState())
     }
     
 }
@@ -119,29 +119,29 @@ import UIKit
 
 public extension UICheckbox {
 
-    private func initDefaultParams() {
-        addTarget(self, action: #selector(UICheckbox.checkboxTapped), forControlEvents: .TouchUpInside)
-        setTitle(nil, forState: .Normal)
+    fileprivate func initDefaultParams() {
+        addTarget(self, action: #selector(UICheckbox.checkboxTapped), for: .touchUpInside)
+        setTitle(nil, for: UIControlState())
 
         clipsToBounds = true
 
         setCheckboxImage()
     }
 
-    private func setCheckboxImage() {
-        let frameworkBundle = NSBundle(forClass: UICheckbox.self)
-        let bundleURL = frameworkBundle.resourceURL?.URLByAppendingPathComponent("UICheckbox.bundle")
-        let resourceBundle = NSBundle(URL: bundleURL!)
-        let image = UIImage(named: "ic_check_3x", inBundle: resourceBundle, compatibleWithTraitCollection: nil)
-        imageView?.contentMode = .ScaleAspectFit
+    fileprivate func setCheckboxImage() {
+        let frameworkBundle = Bundle(for: UICheckbox.self)
+        let bundleURL = frameworkBundle.resourceURL?.appendingPathComponent("UICheckbox.bundle")
+        let resourceBundle = Bundle(url: bundleURL!)
+        let image = UIImage(named: "ic_check_3x", in: resourceBundle, compatibleWith: nil)
+        imageView?.contentMode = .scaleAspectFit
 
-        setImage(nil, forState: .Normal)
-        setImage(image, forState: .Selected)
-        setImage(image, forState:  .Highlighted)
+        setImage(nil, for: UIControlState())
+        setImage(image, for: .selected)
+        setImage(image, for:  .highlighted)
 
     }
 
-    @objc private func checkboxTapped(sender: UICheckbox) {
-        selected = !selected
+    @objc fileprivate func checkboxTapped(_ sender: UICheckbox) {
+        isSelected = !isSelected
     }
 }
