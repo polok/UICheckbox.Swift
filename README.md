@@ -34,7 +34,7 @@ As for [CocoaPods](https://cocoapods.org), use this to get the latest release:
 ```ruby
 use_frameworks!
 
-pod 'UICheckbox'
+pod 'UICheckbox.Swift'
 ```
 
 And `import UICheckbox` in the files you'd like to use it.
