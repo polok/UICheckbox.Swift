@@ -31,12 +31,12 @@ import UIKit
     /*
     * Variable describes UICheckbox padding
     */
-    @IBInspectable var padding: CGFloat = CGFloat(15)
+    @IBInspectable open var padding: CGFloat = CGFloat(15)
 
    /*
    * Variable describes UICheckbox border width
    */
-    @IBInspectable var borderWidth: CGFloat = 2.0 {
+    @IBInspectable open var borderWidth: CGFloat = 2.0 {
         didSet {
             layer.borderWidth = borderWidth
         }
@@ -45,7 +45,7 @@ import UIKit
     /*
     * Variable stores UICheckbox border color
     */
-    @IBInspectable var borderColor: UIColor = UIColor.lightGray {
+    @IBInspectable open var borderColor: UIColor = UIColor.lightGray {
         didSet {
             layer.borderColor = borderColor.cgColor
         }
@@ -54,7 +54,7 @@ import UIKit
     /*
     * Variable stores UICheckbox border radius
     */
-    @IBInspectable var cornerRadius: CGFloat = 5.0 {
+    @IBInspectable open var cornerRadius: CGFloat = 5.0 {
         didSet {
             layer.cornerRadius = cornerRadius
         }
